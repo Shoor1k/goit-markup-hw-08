@@ -392,6 +392,9 @@ ul {
   .container {
 <<<<<<< HEAD
     width: 768px;
+=======
+    max-width: 768px;
+>>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
   }
 }
 
