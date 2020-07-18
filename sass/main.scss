@@ -1,0 +1,24 @@
+// глобальные стили
+@import "./base/normalize";
+@import "./utils/variables";
+@import "./utils/flex-box";
+@import "./base/global";
+
+@import "./utils/social-link";
+@import "./components/social-link";
+
+// Хедер
+@import "./layout/header/header";
+// // футер
+@import "./layout/footer/footer-box";
+@import "./layout/footer/contacts-adres";
+@import "./layout/footer/subscription";
+// index.html
+@import "./pages/index.html/hero";
+@import "./pages/index.html/our-feature";
+@import "./pages/index.html/what-are-we-doing";
+@import "./pages/index.html/our-team";
+@import "./pages/index.html/our-clients";
+@import "./pages/index.html/modal-windows";
+// portfolio.html
+@import "./pages/portfolio.html/portfolio";

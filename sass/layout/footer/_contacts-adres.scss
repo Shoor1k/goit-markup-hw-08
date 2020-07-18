@@ -1,0 +1,27 @@
+.footer-adress-list {
+  margin-top: 20px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+.footer-contacts .item {
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+  }
+}
+.footer-contacts .item:not(:first-child) {
+  margin-top: 9px;
+}
+.footer-adress-link {
+  margin-top: 9px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $sub-main-color-white;
+}
+.footer-adress-map {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $main-color-white;
+}

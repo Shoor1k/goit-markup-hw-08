@@ -1,0 +1,33 @@
+.social-link-box {
+  @include flex-parent();
+}
+.social-link-box.footer {
+  margin-top: 20px;
+}
+.social-link-box.footer a {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+}
+.social-link-box a {
+  @include flex-parent();
+  @include social-link-contain();
+
+  &:hover {
+    background-color: #2196f3;
+    border-radius: 50px;
+  }
+  & + a {
+    margin-left: 10px;
+  }
+}
+
+.social-link {
+  @include social-link-icon();
+  fill: #afb1b8;
+  .social-link-box a:hover & {
+    fill: #ffffff;
+  }
+}
+.social-link.footer {
+  fill: #ffffff;
+}
