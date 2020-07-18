@@ -1,0 +1,85 @@
+/* Селекторы секции преимущества */
+.feature-section {
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
+  }
+}
+.feature {
+  @media screen and (max-width: 1119px) {
+    padding-top: 60px;
+  }
+  @media screen and(min-width: 1200px) {
+    padding-top: 95px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.feature li {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(2n + 2) {
+      margin-left: 30px;
+    }
+  }
+  @media screen and(min-width:1200px) {
+    width: 270px;
+    & + li {
+      margin-left: 30px;
+    }
+  }
+  &::before {
+    content: "";
+    display: block;
+
+    height: 120px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 55px;
+    }
+
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    background-position: center;
+    background-color: $sub-main-color-white;
+  }
+}
+
+.antena-img::before {
+  background-image: url(../images/antena.svg);
+}
+.clock-img::before {
+  background-image: url(..//images/clock.svg);
+}
+.diagram-img::before {
+  background-image: url(..//images/diagram.svg);
+}
+.container-img::before {
+  background-image: url(..//images/astronaunt.svg);
+}
+.feature-title {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.feature-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $sub-main-color-black;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 30px;
+  }
+}

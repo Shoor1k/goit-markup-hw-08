@@ -1,0 +1,32 @@
+.footer-contacts {
+  @media screen and (min-width: 768px) {
+    width: 232px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 76px;
+  }
+}
+
+.footer-adress-list {
+  margin-top: 20px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.footer-adress-list .item:not(:first-child) {
+  margin-top: 9px;
+}
+.footer-adress-link {
+  margin-top: 9px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-adress-map {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $main-color-white;
+}

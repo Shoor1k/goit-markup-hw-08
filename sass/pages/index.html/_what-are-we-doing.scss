@@ -1,0 +1,38 @@
+/* Селекторы секции чем мы занимаемся */
+
+.what-are-we-doing {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+}
+
+.what-are-we-doing-list li {
+  position: relative;
+  max-width: 370px;
+  max-height: 294px;
+}
+.what-are-we-doing li + li {
+  margin-left: 30px;
+}
+.what-are-we-doing-text {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+
+  color: $main-color-white;
+  background: rgba(47, 48, 58, 0.8);
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.what-are-we-doing ul {
+  display: flex;
+}

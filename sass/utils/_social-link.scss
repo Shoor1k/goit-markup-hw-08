@@ -1,0 +1,14 @@
+@mixin social-link-contain($border: none, $width: 44px, $height: 44px) {
+  padding: 0;
+  border: $border;
+  width: $width;
+  height: $height;
+  border-radius: 50px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin social-link-icon($width: 40px, $height: 40px) {
+  width: $width;
+  height: $height;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
