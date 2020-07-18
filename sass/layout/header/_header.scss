@@ -13,24 +13,17 @@
   }
 }
 .logo-header {
-<<<<<<< HEAD
   @media screen and (min-width: 768px) {
     margin-right: 81px;
   }
   @media screen and (max-width: 1199px) {
-=======
-  @media screen and (max-width: 1999px) {
->>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
     width: 141px;
     height: 28px;
   }
   @media screen and (min-width: 1200px) {
     width: 153px;
     height: 21px;
-<<<<<<< HEAD
     margin-right: 85px;
-=======
->>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
   }
 }
 .menu-button {
@@ -39,7 +32,6 @@
   margin-left: auto;
   padding: 0;
   background-color: transparent;
-<<<<<<< HEAD
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -60,23 +52,6 @@
       0px 4px 8px rgba(0, 0, 0, 0.04);
   }
   display: flex;
-=======
-}
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 101%;
-  left: 0;
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #ffffff;
-
-  z-index: 10;
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 4px 8px rgba(0, 0, 0, 0.04);
->>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
 
   &.is-open {
     display: block;
@@ -92,24 +67,16 @@
   display: none;
 }
 .header-list {
-<<<<<<< HEAD
   padding: 0;
   display: flex;
   flex-direction: column;
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
-=======
-  // margin-left: 85px;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
->>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
   justify-content: center;
   align-items: center;
 }
 .header-list li:not(:last-child) {
-<<<<<<< HEAD
   @media screen and (min-width: 768px) {
     margin-right: 50px;
   }
@@ -118,14 +85,6 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
   }
-=======
-  @media screen and (max-width: 767px) {
-    margin-bottom: 32px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-left: 50px;
-  }
->>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
 }
 .header-list li:last-child {
   @media screen and (max-width: 767px) {
@@ -141,13 +100,10 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $main-color-black;
-<<<<<<< HEAD
   @media screen and (max-width: 767px) {
     font-size: 18px;
     line-height: 1.16;
   }
-=======
->>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -173,7 +129,6 @@
 }
 /* Селекторы адреса */
 .header-address {
-<<<<<<< HEAD
   margin-left: 305px;
   display: flex;
   justify-content: center;
@@ -193,27 +148,13 @@
   }
 }
 
-=======
-  margin-left: auto;
-  display: flex;
-  justify-content: center;
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
->>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
 .header-address a:not(:first-child) {
   @media screen and (max-width: 767px) {
     margin-top: 16px;
   }
-<<<<<<< HEAD
   @media screen and (min-width: 1200px) {
     margin-left: 30px;
   }
-=======
-  // margin-left: 30px;
->>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
 }
 
 .icon-header {
@@ -230,7 +171,6 @@
 
   font-style: normal;
   font-weight: 500;
-<<<<<<< HEAD
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.02em;
@@ -242,12 +182,6 @@
     font-size: 14px;
     line-height: 1.14;
   }
-=======
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $sub-main-color-black;
->>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

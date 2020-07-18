@@ -1,13 +1,10 @@
 /* Селекторы секции преимущества */
-<<<<<<< HEAD
 .feature-section {
   padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
     padding-bottom: 0px;
   }
 }
-=======
->>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
 .feature {
   @media screen and (max-width: 1119px) {
     padding-top: 60px;
@@ -17,15 +14,11 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
-<<<<<<< HEAD
     flex-wrap: wrap;
-=======
->>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
   }
 }
 .feature li {
   width: 100%;
-<<<<<<< HEAD
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -41,8 +34,6 @@
       margin-left: 30px;
     }
   }
-=======
->>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
   &::before {
     content: "";
     display: block;
@@ -58,14 +49,6 @@
     background-position: center;
     background-color: $sub-main-color-white;
   }
-<<<<<<< HEAD
-=======
-  @media screen and (min-width: 768px) {
-    & + li {
-      margin-left: 30px;
-    }
-  }
->>>>>>> bef1715ace4bdb7c79ce874e1e6cdbe7f633c7b8
 }
 
 .antena-img::before {
