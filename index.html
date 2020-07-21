@@ -78,13 +78,15 @@
     <main>
       <!-- Заказ услуг -->
       <section class="services-hero">
-        <h1 class="services-text-hero item">
-          эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <a href="#" class="services-button item" data-modal-open>
-          Заказать услугу</a
-        >
+        <div class="container">
+          <h1 class="services-text-hero item">
+            эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <a href="#" class="services-button item" data-modal-open>
+            Заказать услугу</a
+          >
+        </div>
       </section>
       <!-- Преимущества -->
       <section class="feature-section">
@@ -129,34 +131,83 @@
           <ul class="what-are-we-doing-list">
             <li>
               <a href="#">
-                <img
-                  src="images/desctop-apps.jpg"
-                  alt="desctop-apps"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/what-are-we-doing/notebook.webp,
+                      ./images/what-are-we-doing/notebook@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/what-are-we-doing/notebook.jpg,
+                      ./images/what-are-we-doing/notebook@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/what-are-we-doing/notebook.jpg"
+                    alt="фото десктопного приложения"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <div class="what-are-we-doing-text">Десктопные приложения</div>
               </a>
             </li>
             <li>
               <a href="#">
-                <img
-                  src="images/mobile-apps.jpg"
-                  alt="mobile-apps"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/what-are-we-doing/smartphone.webp,
+                      ./images/what-are-we-doing/smartphone@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/what-are-we-doing/smartphone.jpg,
+                      ./images/what-are-we-doing/smartphone@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/what-are-we-doing/smartphone.jpg"
+                    alt="фото мобильного приложения"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="what-are-we-doing-text">Мобильные приложения</div>
               </a>
             </li>
             <li>
               <a href="#">
-                <img
-                  src="images/design.jpg"
-                  alt="design"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/what-are-we-doing/desing.webp,
+                      ./images/what-are-we-doing/desing@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/what-are-we-doing/desing.jpg,
+                      ./images/what-are-we-doing/desing@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/what-are-we-doing/desing.jpg"
+                    alt="фото дизайна"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="what-are-we-doing-text">Дизайнерские решения</div>
               </a>
             </li>
@@ -170,12 +221,61 @@
           <ul>
             <li>
               <div class="box">
-                <img
-                  src="images/john-smith.jpg"
-                  alt="John Smith"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/nikolay_1200.webp,
+                      ./images/team/nikolay_1200@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/nikolay_1200.jpg,
+                      ./images/team/nikolay_1200@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/nikolay_768.webp,
+                      ./images/team/nikolay_768@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/nikolay_768.jpg,
+                      ./images/team/nikolay_768@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/nikolay_480.webp,
+                      ./images/team/nikolay_480@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/nikolay_480.jpg,
+                      ./images/team/nikolay_480@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/team/nikolay_480.jpg 480w,  ./images/team/nikolay_768.jpg 768w, ./images/team/nikolay_1200.jpg 1200w,"
+                    alt="Фото Николай Кучеренко"
+                    sizes="(max-width: 767px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 270px"
+                  />
+                </picture>
                 <h3 class="our-team-title">Николай Кучеренко</h3>
                 <p class="our-team-text">Product Designer</p>
                 <div class="social-link-box">
@@ -222,12 +322,61 @@
             </li>
             <li>
               <div class="box">
-                <img
-                  src="images/marta-stewart.jpg"
-                  alt="Marta Stewart"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/olga_1200.webp,
+                      ./images/team/olga_1200@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/olga_1200.jpg,
+                      ./images/team/olga_1200@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/olga_768.webp,
+                      ./images/team/olga_768@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/olga_768.jpg,
+                      ./images/team/olga_768@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/olga_480.webp,
+                      ./images/team/olga_480@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/olga_480.jpg,
+                      ./images/team/olga_480@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/team/olga_480.jpg 480w,  ./images/team/olga_768.jpg 768w, ./images/team/olga_1200.jpg 1200w,"
+                    alt="Фото Ольга Иванова"
+                    sizes="(max-width: 767px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 270px"
+                  />
+                </picture>
                 <h3 class="our-team-title">Ольга Иванова</h3>
                 <p class="our-team-text">Frontend Developer</p>
                 <div class="social-link-box">
@@ -274,12 +423,61 @@
             </li>
             <li>
               <div class="box">
-                <img
-                  src="images/robert-jakis.jpg"
-                  alt="Robert Jakis"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/andrey_1200.webp,
+                      ./images/team/andrey_1200@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/andrey_1200.jpg,
+                      ./images/team/andrey_1200@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/andrey_768.webp,
+                      ./images/team/andrey_768@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/andrey_768.jpg,
+                      ./images/team/andrey_768@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/andrey_480.webp,
+                      ./images/team/andrey_480@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/andrey_480.jpg,
+                      ./images/team/andrey_480@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/team/andrey_480.jpg 480w,  ./images/team/andrey_768.jpg 768w, ./images/team/andrey_1200.jpg 1200w,"
+                    alt="Фото Андрей Шевченко"
+                    sizes="(max-width: 767px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 270px"
+                  />
+                </picture>
                 <h3 class="our-team-title">Андрей Шевченко</h3>
                 <p class="our-team-text">Marketing</p>
                 <div class="social-link-box">
@@ -326,12 +524,61 @@
             </li>
             <li>
               <div class="box">
-                <img
-                  src="images/martin-doe.jpg"
-                  alt="Martin Doe"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/ivan_1200.webp,
+                      ./images/team/ivan_1200@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/ivan_1200.jpg,
+                      ./images/team/ivan_1200@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/ivan_768.webp,
+                      ./images/team/ivan_768@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/ivan_768.jpg,
+                      ./images/team/ivan_768@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/ivan_480.webp,
+                      ./images/team/ivan_480@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/ivan_480.jpg,
+                      ./images/team/ivan_480@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/team/ivan_480.jpg 480w,  ./images/team/ivan_768.jpg 768w, ./images/team/ivan_1200.jpg 1200w,"
+                    alt="Фото Иван Николаев"
+                    sizes="(max-width: 767px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 270px"
+                  />
+                </picture>
                 <h3 class="our-team-title">Иван Николаев</h3>
                 <p class="our-team-text">UI Designer</p>
                 <div class="social-link-box">
