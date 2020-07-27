@@ -11,24 +11,21 @@
 .filters-flex {
   display: flex;
   justify-content: flex-start;
+  @media screen and (max-width: 767px) {
+    margin: -8px -4px 32px -4px;
+  }
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
-
   flex-wrap: wrap;
   margin-bottom: 52px;
 }
 
 .filters-flex li {
-  & + li {
-    margin-left: 8px;
-  }
-  @media screen and(max-width:767px) {
-    &:nth-child(3n + 1) {
-      margin-left: 0px;
-    }
-    &:nth-child(1n + 4) {
-      margin-top: 15px;
+  margin: 8px 4px;
+  @media screen and (min-width: 768px) {
+    & + li {
+      margin-left: 8px;
     }
   }
 }
@@ -66,6 +63,7 @@
 .portfolio li {
   @media screen and (max-width: 767px) {
     max-width: 450px;
+    width: 100%;
     & + li {
       margin-top: 30px;
     }
@@ -116,29 +114,31 @@
   @media screen and (min-width: 1200px) {
     max-width: 370px;
   }
-  width: 100%;
-  height: 294px;
 }
 .back-side-card {
   position: absolute;
   top: 0;
   left: 0;
+
   @media screen and (min-width: 768px) {
-    max-width: 354px;
+    font-size: 18px;
+    width: 354px;
+    padding: 49px 24px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 370px;
+    width: 370px;
+    padding: 63px 24px;
   }
-  max-width: 450px;
-  height: 294px;
-  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  padding: 10% 15px;
 
   color: $main-color-white;
   background: rgba(33, 150, 243, 0.9);
 
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.56;
   letter-spacing: 0.03em;
 
