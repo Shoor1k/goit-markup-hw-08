@@ -27,12 +27,12 @@
 
   overflow: auto;
   @media screen and (max-width: 1199px) {
-    padding: 8px 45px 40px 36px;
+    padding: 8px 15px 40px 15px;
   }
   padding: 10px 40px 40px 40px;
   background: $main-color-white;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 .button-clouse {
@@ -40,12 +40,14 @@
   width: 30px;
   height: 30px;
 
-  margin-right: -30px;
   margin-left: auto;
 
   background: $main-color-white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  @media screen and (min-width: 1200px) {
+    margin-right: -30px;
+  }
 }
 .icon-clouse {
   width: 11px;
@@ -172,7 +174,6 @@
 .modal-form-input.text-area {
   height: 120px;
   resize: none;
-  padding: 12px;
   padding: 12px 16px;
 }
 .checkbox-box {
@@ -198,6 +199,8 @@
   align-items: center;
   justify-content: center;
   @media screen and (max-width: 1199px) {
+    position: relative;
+    margin-left: 24px;
     font-size: 12px;
     line-height: 1.16;
   }
@@ -208,22 +211,29 @@
 }
 .check-text::before {
   content: " ";
+
   width: 16px;
   height: 15px;
   border: 1px solid black;
   border-radius: 2px;
   margin-right: 8px;
+  @media screen and (max-width: 1199px) {
+    position: absolute;
+    top: 0;
+    left: -24px;
+    transform: translateY(-10%);
+  }
 }
 .check-text a {
   color: #2196f3;
   text-decoration-line: underline;
 }
 .checkbox:checked ~ .check-text::before {
-  padding: 0;
   background: #2196f3;
   border: none;
   background-image: url(../images/icon-check.svg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-origin: border-box;
   fill: #ffffff;
@@ -234,7 +244,7 @@
   padding: 10px 32px;
 
   background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid #2196f3;
 
